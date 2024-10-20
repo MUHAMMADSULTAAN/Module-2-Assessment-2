@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/backround/picture\ 1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+header {
+    background-color: rgba(34, 193, 195, 0.9); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+main {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(34, 193, 195, 0.9); 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.offer, .shop, .movie {
+    margin-bottom: 30px;
+}
+
+.shop-list, .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop, .movie {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(34, 193, 195, 0.5);
+    border-radius: 12px;
+    padding: 15px;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.shop:hover, .movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shop img, .movie img {
+    width: 30%; 
+    height: auto; 
+    max-height: 50px; 
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid rgba(34, 193, 195, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.2s;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #22c1c3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(34, 193, 195, 0.5);
+}
+
+.image-resize{
+    width: 50%;
+    height: auto;
+}
+
+.image-resize-map{
+    width: 90%;
+    height: auto;
+}
